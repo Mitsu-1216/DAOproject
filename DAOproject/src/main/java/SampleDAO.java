@@ -21,6 +21,10 @@ public static void main(String[] args) throws SQLException {
 			String id = rs.getString("ID");
 			String name = rs.getString("NAME");
 			int age = rs.getInt("AGE");
+			
+			System.out.println(id);
+			System.out.println(name);
+			System.out.println(age);
 		}
 	}
 	
