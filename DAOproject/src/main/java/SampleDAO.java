@@ -12,8 +12,10 @@ public static void main(String[] args) throws SQLException {
 			"jdbc:h2:tcp://localhist/-/example","sa","")){
 		
 		//SQL文生成
-		String sql;
+		String sql="SELECT ID,NAME,AGE FROM EMPLOYE";
+		PreparedStatement pStmt = conn.prepareStatement(sql);
 	}
+	
 	
 	
 }
