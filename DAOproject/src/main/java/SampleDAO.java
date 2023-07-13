@@ -9,7 +9,7 @@ public class SampleDAO {
 public static void main(String[] args) throws SQLException {
 //データベースに接続
 	try (Connection conn = DriverManager.getConnection(
-			"jdbc:h2:tcp://localhist/-/example","sa","")){
+			"jdbc:mysql:tcp://localhost/~/example","sa","")){
 		
 		//SQL文生成
 		String sql="SELECT ID,NAME,AGE FROM EMPLOYE";
