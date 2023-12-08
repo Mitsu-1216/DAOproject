@@ -9,8 +9,13 @@ import java.sql.SQLException;
 
 public class EmployeeDAO {
 public static void main(String[] args) throws SQLException {
-//データベースに接続
-	try (Connection conn = DriverManager.getConnection(
+	
+	//データベースに接続
+	private final String JDBC_URL = "jdbc:h2:tcp://localhost/example";
+	
+	try (
+			
+			Connection conn = DriverManager.getConnection(
 			"jdbc:mysql:tcp://localhost/~/example","sa","")){
 		
 		//SQL文生成
