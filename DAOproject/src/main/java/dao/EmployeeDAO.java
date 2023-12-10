@@ -13,6 +13,10 @@ public static void main(String[] args) throws SQLException {
 	//データベースに接続
 	private final String JDBC_URL = "jdbc:h2:tcp://localhost/example";
 	
+	public List<Employee> findAll(){
+		List<Smployee> empList = new ArrayList<>;
+	}
+	
 	try (
 			
 			Connection conn = DriverManager.getConnection(
