@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import model.EMPLOYEE;
 
 public class EmployeeDAO {
 public static void main(String[] args) throws SQLException {
@@ -13,8 +14,8 @@ public static void main(String[] args) throws SQLException {
 	//データベースに接続
 	private final String JDBC_URL = "jdbc:h2:tcp://localhost/example";
 	
-	public List<Employee> findAll(){
-		List<Smployee> empList = new ArrayList<>;
+	public List<EMPLOYEE> findAll(){
+		List<EMPLOYEE> empList = new ArrayList<>;
 	}
 	
 	try (
